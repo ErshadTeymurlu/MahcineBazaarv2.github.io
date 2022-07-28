@@ -146,11 +146,6 @@ nav .nav-right .form-group .search-icon img {
   width: 100%;
 }
 
-@media (max-width: 546px) {
-  nav {
-    white-space: nowrap;
-  }
-}
 @media (min-width: 1400px) {
   .container-fluid {
     width: 1450px;
@@ -431,20 +426,6 @@ nav .nav-right .form-group .search-icon img {
   background-color: #f3d00c;
 }
 
-@media (max-width: 546px) {
-  .auction-filter {
-    white-space: nowrap;
-  }
-  #Auctions {
-    white-space: nowrap;
-  }
-  .car-img-wrapper img {
-    min-width: 420px;
-  }
-  .past-auctions {
-    min-width: 410px;
-  }
-}
 @media (max-width: 768px) {
   .top .top-left {
     flex-direction: column;
@@ -580,11 +561,6 @@ footer .wrapper .support a {
 @media (max-width: 546px) {
   footer .support {
     width: 100%;
-  }
-  footer .wrapper {
-    min-width: 410px;
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }
 @media (min-width: 546px) and (max-width: 768px) {
