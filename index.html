@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachineBazaar - Auction of cool modern cars, trucks and SUV's</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <!-- Navrbar starts -->
+    <nav>
+       <div class="container-fluid">
+        <div class="nav-container">
+            <div class="nav-wrapper d-flex justify-content-between align-items-baseline">
+                <div class="nav-left d-flex gap-4 align-items-center">
+                    <div class="logo">
+                        <a href="index.html"><p>Machine<span>Bazaar</span></p></a>
+                    </div>
+                    <ul class="gap-3 pt-1">
+                        <li class="auction"><a href="">Auctions</a></li>
+                        <li class="sell-car"><a href=""><span>Sell a Car</span></a></li>
+                        <li class="what-is-machine"><a href="">What's MachineBazaar?</a></li>
+                        <li class="daily-email"><a href="">Daliy email</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right d-flex">
+                    <div class="form-group">
+                        <input type="search" placeholder="Search a Car (Ex. BMW, Audi, Ford)">
+                        <div class="search-icon"><img src="./assets/images/search-icon-img.png" alt=""></div>
+                    </div>
+                    <a href="#" class="sign-in-btn">Sign Up</a>
+                    <button class="navbar-toggle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <i class="fa-solid fa-bars"></i>
+                       <i class="fa-solid fa-car-side"></i>
+                    </button>
+                    
+                </div>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">What's MachineBazaar?</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><span>Sel a Car</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Daily Email</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+            </div>
+        </div>
+
+        </div>
+            
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Auction section starts -->
+    <section id="Auctions">
+        <div class="container-fluid">
+            <div class="section-bottom-border">
+                <div class="part-one">
+                    <!-- top part starts-->
+                    <div class="top">
+                        <div class="top-left d-flex">
+                            <div class="section-title">
+                                <div class="wrapper">
+                                    <div class="dropdown">
+                                        <button class="auction-toggle btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Auctions
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Past results</a></li>
+                                            <li><a class="dropdown-item" href="#">Live auctions</a></li>
+                                        </ul>
+                                    </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="d-flex dropdowns-ul gap-2">
+                                <!-- Years dropdown starts -->
+                                <li> 
+                                    <div class="dropdown">
+                                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Years
+                                        </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding: 10px 0px">
+                                            <div class="dropdown-wrapper d-flex align-items-center justify-content-center gap-2" style="padding: 10px 20px; width: 198px;">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="form-group">
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">2019</option>
+                                                            <option value="">2018</option>
+                                                            <option value="">2017</option>
+                                                            <option value="">2016</option>
+                                                            <option value="">2015</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <span class="interval" style="color: rgba(0, 0, 0, 0.267);">To</span>
+                                                <div class="d-flex align-items-start">
+                                                    <div class="form-group">
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">2019</option>
+                                                            <option value="">2018</option>
+                                                            <option value="">2017</option>
+                                                            <option value="">2016</option>
+                                                            <option value="">2015</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+        
+                                </li>
+                                <!-- Years dropdown ends -->
+                                <!-- Transmission dropdown starts -->
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Transmission
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">Automatic</a></li>
+                                            <li><a class="dropdown-item" href="#">Manual</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Transmission dropdown ends -->
+                                <!-- Body Style dropdown starts-->
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Body Style
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">Coupe</a></li>
+                                            <li><a class="dropdown-item" href="#">Convertible</a></li>
+                                            <li><a class="dropdown-item" href="#">Hatchback</a></li>
+                                            <li><a class="dropdown-item" href="#">Sedan</a></li>
+                                            <li><a class="dropdown-item" href="#">SUV/Crossover</a></li>
+                                            <li><a class="dropdown-item" href="#">Truck</a></li>
+                                            <li><a class="dropdown-item" href="#">Van/Minivan</a></li>
+                                            <li><a class="dropdown-item" href="#">Wagon</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Body Style dropdown ends  -->
+                            </ul>
+                        </div>
+                        <ul class="auction-filter d-flex gap-3">
+                            <li><a data-target="ending-soon" href="#" class="selected">Ending soon</a></li>
+                            <li><a data-target="newly-listed" href="#">Newly listed</a></li>
+                            <li><a data-target="no-reserve" href="#">No reserve</a></li>
+                            <li><a data-target="lowest-mileage" href="#">Lowest mileage</a></li>
+                        </ul>
+                    </div>
+                    <!-- top part ends -->
+                    <!-- car items starts -->
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-4 ending-soon col-sm-12">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-1.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">1999 Mazda MX-5 Miata</a></p>
+                                    <p>LS6 V8 Swap, 6-Speed Manual, Numerous Modifications</p>
+                                    <p>Jacksonville, FL 32244</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 newly-listed ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-2.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                            <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2017 Porsche 718 Cayman</a></p>
+                                    <p>$19,630 in Options, Porsche CPO Warranty, Arizona-Owned, Mostly Unmodified</p>
+                                    <p>Scottsdale, AZ 85251</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-3.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">1997 BMW M3 Coupe</a></p>
+                                    <p>5-Speed Manual, Some Modifications, Extensive Service Records</p>
+                                    <p>La Jolla, CA 92037</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-4.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">1994 Land Rover Defender 130</a></p>
+                                    <p>Rare Special Vehicles-Built Pickup, Left-Hand Drive, Turbodiesel, 4WD, U.S. Title</p>
+                                    <p>Norwalk, CT 06854</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon lowest-mileage">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-5.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">1997 BMW 750iL</a></p>
+                                    <p>V12 Power, ~54,800 Miles, Long-Wheelbase E38, Unmodified</p>
+                                    <p>Kirkland, WA 98033</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon newly-listed">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper d-flex">
+                                    <a href="">
+                                        <img src="./assets/images/car-6.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2001 Chevrolet Corvette Coupe</a></p>
+                                    <p>6-Speed Manual, Mostly Unmodified, Millennium Yellow</p>
+                                    <p>Leland, NC 28451</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-7.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">1995 Toyota HiAce Cruising Cabin 4x4</a></p>
+                                    <p>4WD, Diesel Power, Japanese-Market Custom Camper Conversion, U.S. Title</p>
+                                    <p>Cookeville, TN 38501</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon no-reserve">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-8.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2016 Mercedes-Benz S600</a></p>
+                                    <p>~19,500 Miles, V12 Power, Highly Equipped, Unmodified</p>
+                                    <p>Englewood, CO 80110</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-9.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2006 Toyota 4Runner Limited 4x4</a></p>
+                                    <p>V8 Power, 4WD, Locking Center Differential, Some Modifications</p>
+                                    <p>Granite Bay, CA 95746</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 no-reserve ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-10.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2003 Ford Mustang SVT Cobra Coupe</a></p>
+                                    <p>~43,800 Miles, 6-Speed Manual, Supercharged V8, Several Modifications</p>
+                                    <p>Altus, OK 73521</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 no-reserve ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-11.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">1990 Toyota Supra Turbo</a></p>
+                                    <p>Turbo 6-Cylinder, Targa Roof, Mostly Unmodified</p>
+                                    <p>Fairfax, VA 22030</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 no-reserve ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-12.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2007 Subaru Impreza WRX Wagon</a></p>
+                                    <p>5-Speed Manual, AWD, Turbocharged Flat-4, Mostly Unmodified</p>
+                                    <p>Leominster, MA 01453</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 no-reserve ending-soon">
+                            <div class="car-wrapper">
+                                <div class="car-img-wrapper">
+                                    <a href="">
+                                        <img src="./assets/images/car-13.jpg" alt="" width="100%">
+                                    </a>
+                                    <div class="auction-info">
+                                        <ul class="d-flex justify-content-between">
+                                             <li><i class="bi bi-stopwatch"></i> <span class="countdown">waiting...</span></li>
+                                            <li class="starting-price"><span>Bid</span> <span class="highest-bid">$0.00</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details">
+                                    <p><a href="#">2012 Audi S4</a></p>
+                                    <p>6-Speed Manual, 1 Owner, 333-hp Supercharged V6, Unmodified</p>
+                                    <p>Indianapolis, IN 46236</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- car items ends -->
+                </div>
+                <div class="past-auctions text-center">
+                    <a href="" class="btn">View auction results</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Auction section ends -->
+    <!-- Why Us? information etc. starts -->
+    <section id="about-us">
+        <div class="container-fluid">
+            <div class="information-wrapper d-flex align-items-start gap-4">
+                <div>
+                    <span><p>About Us</p></span>
+                    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsum porro natus dolores aiores repellendus? Perspiciatis quam corporis aliquam incidunt optio quidem vitae illo obcaecati ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam tempora voluptas modi minus suscipit sint quo dolores maxime iusto.
+                    </p>
+                </div>
+                <div class="form-group" style="width: 400px;">
+                    <span><p>Get the Daily Email</p></span>
+                    <input type="email" placeholder="Email address" class="form-control">
+                    <button type="button" class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Us? information etc. ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container-fluid d-flex flex-column">
+            <div class="wrapper d-flex justify-content-between align-items-start">
+                <div class="logo">
+                    <a href="">Machine<span>Bazaar</span></a>
+                </div>
+                <div class="how-it-works footer-item">
+                    <p href="" class="text-uppercase">How it works</p>
+                    <a href=""><p>Buying a Car</p></a>
+                    <a href=""><p>Selling a Car</p></a>
+                    <a href=""><p>FAQs</p></a>
+                </div>
+                <div class="sellers footer-item">
+                    <p href="" class="text-uppercase">Sellers</p>
+                    <a href=""><p>Submit Your Car </p></a>
+                    <a href=""><p>Photography Guide</p></a>
+                </div>
+                <div class="support footer-item">
+                    <p href="" class="text-uppercase">Helpful Links</p>
+                    <a href=""><p>Support</p></a>
+                </div>
+                <div class="social-networks footer-item">
+                    <ul class="d-flex gap-3">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <p class="small-fs">&COPY; Copyright 2022 MachineBazaar LLC</p>
+                    <a class="small-fs" href="">Terms of Use</a>
+                    &nbsp;
+                    <a class="small-fs" href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="./assets/JS/jquery-3.6.0.min.js"></script>
+    <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./assets/JS/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,599 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0px 40px;
+}
+
+nav .container-fluid .nav-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  padding: 15px 0px;
+}
+nav .container-fluid .nav-container .collapse li a {
+  color: black;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .container-fluid .nav-container .collapse span {
+  background-color: #FEDC19;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+nav .container-fluid .nav-container .collapse input {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+nav .container-fluid .nav-container .collapse button {
+  background-color: #FEDC19;
+  border-radius: 10px;
+  border: none;
+}
+nav .container-fluid .nav-wrapper .nav-left .sell-car {
+  white-space: nowrap;
+}
+nav .container-fluid .nav-wrapper .nav-left .daily-email {
+  white-space: nowrap;
+}
+nav .container-fluid .nav-wrapper .nav-left .what-is-machine {
+  white-space: nowrap;
+}
+nav .container-fluid .nav-wrapper .nav-left ul {
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  padding-top: 6px !important;
+}
+nav .container-fluid .nav-wrapper .nav-left ul li {
+  list-style: none;
+}
+nav .container-fluid .nav-wrapper .nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .container-fluid .nav-wrapper .nav-left ul li span {
+  background-color: #FEDC19;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+nav .container-fluid .nav-wrapper .nav-left .logo {
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 0px;
+}
+nav .container-fluid .nav-wrapper .nav-left .logo a {
+  text-decoration: none;
+}
+nav .container-fluid .nav-wrapper .nav-left .logo p {
+  color: black;
+}
+nav .container-fluid .nav-wrapper .nav-left .logo span {
+  color: #FEDC19;
+}
+nav .nav-right {
+  min-width: 0;
+  margin-left: 30px;
+}
+nav .nav-right button.navbar-toggle {
+  display: none;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+nav .nav-right .sign-in-btn {
+  text-decoration: none;
+  color: black;
+  background-color: #FEDC19;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+nav .nav-right .form-group {
+  margin-right: 30px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 380px;
+}
+nav .nav-right .form-group input {
+  width: 100%;
+  height: 46px;
+  min-width: 0;
+  padding: 10px;
+  padding-left: 50px;
+  background-color: rgba(128, 128, 128, 0.11);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  white-space: wrap;
+}
+nav .nav-right .form-group input:hover {
+  background-color: rgba(128, 128, 128, 0.175);
+}
+nav .nav-right .form-group .search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 15px;
+}
+nav .nav-right .form-group .search-icon img {
+  width: 100%;
+}
+
+@media (max-width: 546px) {
+  nav {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1450px;
+  }
+}
+@media (max-width: 768px) {
+  .auction-toggle i {
+    display: inline !important;
+  }
+  .container-fluid {
+    padding: 0px 12px;
+  }
+}
+@media (max-width: 1311px) {
+  .daily-email {
+    display: none;
+  }
+}
+@media (max-width: 1220px) {
+  .what-is-machine {
+    display: none;
+  }
+  .nav-wrapper .form-group {
+    width: 530px !important;
+  }
+}
+@media (max-width: 1027px) {
+  .sell-car {
+    display: none;
+  }
+}
+@media (min-width: 993px) {
+  .collapse {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  nav .nav-container {
+    padding: 10px 0px !important;
+  }
+  nav .nav-left {
+    align-items: center;
+  }
+  nav .nav-left .logo p {
+    font-size: 22px;
+  }
+  nav .nav-left .logo span {
+    font-size: 22px;
+  }
+  nav .nav-left ul {
+    display: none;
+  }
+  nav .nav-left ul li {
+    display: none;
+  }
+  nav .nav-right {
+    gap: 12px;
+    align-items: center;
+  }
+  nav .nav-right .form-group {
+    display: none;
+  }
+  nav .nav-right .form-group input {
+    display: none;
+  }
+  nav .nav-right button.navbar-toggle {
+    display: inline-block;
+  }
+  nav .nav-right .sign-in-btn {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+}
+#Auctions .container-fluid {
+  padding-top: 20px;
+}
+#Auctions .container-fluid .section-bottom-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+#Auctions .container-fluid .selected {
+  position: relative;
+  color: black !important;
+}
+#Auctions .container-fluid .selected::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  margin-top: 5px;
+  width: 90px;
+  border: 1px solid black;
+}
+#Auctions .container-fluid .part-one div.section-title {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+#Auctions .container-fluid .part-one div.section-title i {
+  visibility: hidden;
+}
+#Auctions .container-fluid .part-one div.section-title .wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+#Auctions .container-fluid .part-one div.section-title .wrapper .auction-toggle {
+  pointer-events: none;
+}
+#Auctions .container-fluid .part-one div.section-title .wrapper .auction-toggle i {
+  visibility: visible;
+  font-size: 14px;
+  display: none;
+}
+#Auctions .container-fluid .part-one .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#Auctions .container-fluid .part-one .top .dropdown-wrapper span.interval {
+  cursor: default;
+}
+#Auctions .container-fluid .part-one .top .dropdown-wrapper select {
+  cursor: pointer;
+}
+#Auctions .container-fluid .part-one .top .dropdown-menu {
+  border: none;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.16);
+}
+#Auctions .container-fluid .part-one .top .dropdown-menu a {
+  color: rgba(0, 0, 0, 0.63) !important;
+}
+#Auctions .container-fluid .part-one .top .dropdown-menu a:hover {
+  color: black !important;
+  background-color: transparent;
+}
+#Auctions .container-fluid .part-one .top .top-left .wrapper {
+  padding-top: 5px;
+}
+#Auctions .container-fluid .part-one .top .top-left .wrapper button {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  padding: 0;
+  font-weight: 600;
+}
+#Auctions .container-fluid .part-one .top .top-left .wrapper button::after {
+  content: none;
+}
+#Auctions .container-fluid .part-one .top .top-left ul {
+  padding: 0;
+  padding-top: 2px;
+  align-items: center;
+}
+#Auctions .container-fluid .part-one .top .top-left ul li:first-child {
+  position: relative;
+}
+#Auctions .container-fluid .part-one .top .top-left ul li {
+  list-style: none;
+}
+#Auctions .container-fluid .part-one .top .top-left ul li button {
+  background-color: white;
+  padding: 5px 15px;
+  border-color: rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  border-width: 1px;
+  color: rgba(0, 0, 0, 0.808);
+}
+#Auctions .container-fluid .part-one .top .top-left ul li button i {
+  color: black;
+}
+#Auctions .container-fluid .part-one .top ul.auction-filter {
+  align-items: center;
+}
+#Auctions .container-fluid .part-one .top ul.auction-filter li {
+  list-style: none;
+}
+#Auctions .container-fluid .part-one .top ul.auction-filter li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.63);
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper {
+  margin-bottom: 10px;
+  position: relative;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper img,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper img,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper img {
+  border-radius: 3px;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background-color: #222222;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info ul,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info ul,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info ul {
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info ul li,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info ul li,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info ul li {
+  font-size: 14px;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info ul li i,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info ul li i,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info ul li i {
+  color: rgb(196, 196, 196);
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info ul li span.countdown,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info ul li span.countdown,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info ul li span.countdown {
+  font-weight: bolder;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info ul li.starting-price span,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info ul li.starting-price span,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info ul li.starting-price span {
+  color: rgb(196, 196, 196);
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-img-wrapper .auction-info ul li.starting-price span.highest-bid,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-img-wrapper .auction-info ul li.starting-price span.highest-bid,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-img-wrapper .auction-info ul li.starting-price span.highest-bid {
+  color: white;
+  font-weight: bolder;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-details *:first-child a,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-details *:first-child a,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-details *:first-child a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-details *:first-child a:hover,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-details *:first-child a:hover,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-details *:first-child a:hover {
+  text-decoration: underline;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-details *:not(:first-child),
+#Auctions .container-fluid .part-one .row .col-md-4 .car-details *:not(:first-child),
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-details *:not(:first-child) {
+  line-height: 1.4;
+  font-size: 14px;
+}
+#Auctions .container-fluid .part-one .row .col-lg-3 .car-details *:last-child,
+#Auctions .container-fluid .part-one .row .col-md-4 .car-details *:last-child,
+#Auctions .container-fluid .part-one .row .col-sm-12 .car-details *:last-child {
+  color: rgba(0, 0, 0, 0.507);
+}
+#Auctions .container-fluid .past-auctions {
+  padding: 25px 0px;
+  margin-bottom: 40px;
+}
+#Auctions .container-fluid .past-auctions a {
+  background-color: #FEDC19;
+  padding: 10px 30px;
+  font-weight: bolder;
+  border: none;
+}
+#Auctions .container-fluid .past-auctions a:hover {
+  background-color: #f3d00c;
+}
+
+@media (max-width: 546px) {
+  .auction-filter {
+    white-space: nowrap;
+  }
+  #Auctions {
+    white-space: nowrap;
+  }
+  .car-img-wrapper img {
+    min-width: 420px;
+  }
+  .past-auctions {
+    min-width: 410px;
+  }
+}
+@media (max-width: 768px) {
+  .top .top-left {
+    flex-direction: column;
+  }
+  .section-title .wrapper .auction-toggle {
+    box-shadow: none;
+    pointer-events: all !important;
+  }
+}
+@media (max-width: 1090px) {
+  .top {
+    flex-direction: column;
+  }
+  .top ul.auction-filter {
+    padding: 0;
+  }
+}
+#about-us .container-fluid .information-wrapper {
+  padding: 20px 0px;
+  flex-direction: column;
+}
+#about-us .container-fluid .information-wrapper p:first-child {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#about-us .container-fluid .information-wrapper p.about-content {
+  color: rgba(0, 0, 0, 0.671);
+}
+#about-us .container-fluid .information-wrapper input {
+  margin-bottom: 15px;
+}
+#about-us .container-fluid .information-wrapper button {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 5px 15px;
+  color: rgba(0, 0, 0, 0.795);
+}
+#about-us .container-fluid .information-wrapper span {
+  position: relative;
+}
+#about-us .container-fluid .information-wrapper span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background-color: #FEDC19;
+}
+#about-us .container-fluid .information-wrapper .form-group span {
+  position: relative;
+}
+#about-us .container-fluid .information-wrapper .form-group span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 143px;
+  height: 3px;
+  background-color: #FEDC19;
+}
+
+@media (max-width: 546px) {
+  #about-us p.about-content {
+    min-width: 405px;
+  }
+}
+footer {
+  background-color: #eeeef0;
+}
+footer .container-fluid {
+  padding: 0px;
+}
+footer .wrapper {
+  padding: 40px 40px 0px 40px;
+  flex-wrap: wrap;
+}
+footer .wrapper a {
+  text-decoration: none;
+  color: black;
+}
+footer .wrapper .footer-item {
+  margin-bottom: 40px;
+  text-align: start;
+}
+footer .wrapper .logo a {
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .wrapper .logo span {
+  color: #FEDC19;
+}
+footer .wrapper p.text-uppercase {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.349);
+  font-size: 12px;
+}
+footer .wrapper .social-networks ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+footer .wrapper .social-networks .small-fs {
+  font-size: 12px;
+}
+footer .wrapper .how-it-works a {
+  font-size: 15px;
+}
+footer .wrapper .how-it-works a:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+footer .wrapper a:not(:first-child):hover {
+  text-decoration: underline;
+}
+footer .wrapper .sellers a {
+  font-size: 15px;
+}
+footer .wrapper .sellers a:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+footer .wrapper .support a {
+  font-size: 15px;
+}
+
+@media (max-width: 930px) {
+  footer .wrapper .logo {
+    display: none;
+  }
+}
+@media (max-width: 546px) {
+  footer .support {
+    width: 100%;
+  }
+  footer .wrapper {
+    min-width: 410px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width: 546px) and (max-width: 768px) {
+  footer .wrapper {
+    gap: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  footer .wrapper:last-child {
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=index.css.map */
