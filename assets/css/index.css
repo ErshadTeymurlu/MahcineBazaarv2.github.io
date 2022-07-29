@@ -36,7 +36,7 @@ nav .container-fluid .nav-container .collapse li a {
   width: fit-content;
 }
 nav .container-fluid .nav-container .collapse span {
-  background-color: #FEDC19;
+  background-color: #ffe55f;
   padding: 10px;
   border-radius: 30px;
   font-weight: bold;
@@ -46,7 +46,7 @@ nav .container-fluid .nav-container .collapse input {
   border: 1px solid rgba(0, 0, 0, 0.13);
 }
 nav .container-fluid .nav-container .collapse button {
-  background-color: #FEDC19;
+  background-color: #ffe55f;
   border-radius: 10px;
   border: none;
 }
@@ -73,7 +73,7 @@ nav .container-fluid .nav-wrapper .nav-left ul li a {
   color: black;
 }
 nav .container-fluid .nav-wrapper .nav-left ul li span {
-  background-color: #FEDC19;
+  background-color: #ffe55f;
   padding: 10px;
   border-radius: 30px;
   font-weight: bold;
@@ -90,7 +90,7 @@ nav .container-fluid .nav-wrapper .nav-left .logo p {
   color: black;
 }
 nav .container-fluid .nav-wrapper .nav-left .logo span {
-  color: #FEDC19;
+  color: #ffe55f;
 }
 nav .nav-right {
   min-width: 0;
@@ -106,7 +106,7 @@ nav .nav-right button.navbar-toggle {
 nav .nav-right .sign-in-btn {
   text-decoration: none;
   color: black;
-  background-color: #FEDC19;
+  background-color: #ffe55f;
   padding: 10px 30px;
   border-radius: 8px;
   border: none;
@@ -237,7 +237,7 @@ nav .nav-right .form-group .search-icon img {
   left: 0;
   height: 2px;
   margin-top: 5px;
-  width: 90px;
+  width: 100%;
   border: 1px solid black;
 }
 #Auctions .container-fluid .part-one div.section-title {
@@ -306,7 +306,6 @@ nav .nav-right .form-group .search-icon img {
   padding: 0;
   padding-top: 2px;
   align-items: center;
-  min-width: none !important;
 }
 #Auctions .container-fluid .part-one .top .top-left ul li:first-child {
   position: relative;
@@ -418,7 +417,7 @@ nav .nav-right .form-group .search-icon img {
   margin-bottom: 40px;
 }
 #Auctions .container-fluid .past-auctions a {
-  background-color: #FEDC19;
+  background-color: #ffe55f;
   padding: 10px 30px;
   font-weight: bolder;
   border: none;
@@ -448,15 +447,14 @@ nav .nav-right .form-group .search-icon img {
   padding: 20px 0px;
   flex-direction: column;
 }
-#about-us .container-fluid .information-wrapper p:first-child {
-  margin-bottom: 10px;
+#about-us .container-fluid .information-wrapper span {
+  color: rgba(0, 0, 0, 0.871);
   font-weight: bold;
-}
-#about-us .container-fluid .information-wrapper p.about-content {
-  color: rgba(0, 0, 0, 0.671);
+  display: inline-block;
 }
 #about-us .container-fluid .information-wrapper input {
   margin-bottom: 15px;
+  width: 350px;
 }
 #about-us .container-fluid .information-wrapper button {
   background-color: white;
@@ -469,31 +467,28 @@ nav .nav-right .form-group .search-icon img {
 }
 #about-us .container-fluid .information-wrapper span::after {
   content: "";
+  display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 70px;
-  height: 3px;
-  background-color: #FEDC19;
+  top: 18px;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ffe55f;
 }
 #about-us .container-fluid .information-wrapper .form-group span {
   position: relative;
 }
 #about-us .container-fluid .information-wrapper .form-group span::after {
   content: "";
+  display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 143px;
-  height: 3px;
-  background-color: #FEDC19;
+  width: 100%;
+  top: 18px;
+  height: 5px;
+  background: #ffe55f;
+  border-radius: 2px;
 }
 
-@media (max-width: 546px) {
-  #about-us p.about-content {
-    min-width: 310px;
-  }
-}
 footer {
   background-color: #eeeef0;
 }
@@ -517,7 +512,7 @@ footer .wrapper .logo a {
   font-size: 20px;
 }
 footer .wrapper .logo span {
-  color: #FEDC19;
+  color: #ffe55f;
 }
 footer .wrapper p.text-uppercase {
   display: inline-block;
