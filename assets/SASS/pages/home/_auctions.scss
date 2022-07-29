@@ -1,14 +1,15 @@
 #Auctions {
 
     .container-fluid {
-        .clicked{
+        .clicked {
             position: relative;
-            .fa-check{
+
+            .fa-check {
                 position: absolute;
                 color: black;
                 right: 11px;
                 top: 8px;
-                visibility: visible!important;
+                visibility: visible !important;
             }
         }
 
@@ -290,7 +291,15 @@
             box-shadow: 0 8px 40px rgb(0 0 0 / 16%);
             border: none;
 
+            li {
+                &:hover {
+                    background-color: unset;
+                }
+            }
+
             .dropdown-item {
+                color: black;
+
                 &:hover {
                     background-color: unset;
                 }
