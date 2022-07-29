@@ -222,6 +222,16 @@ nav .nav-right .form-group .search-icon img {
 #Auctions .container-fluid {
   padding-top: 20px;
 }
+#Auctions .container-fluid .clicked {
+  position: relative;
+}
+#Auctions .container-fluid .clicked .fa-check {
+  position: absolute;
+  color: black;
+  right: 11px;
+  top: 8px;
+  visibility: visible !important;
+}
 #Auctions .container-fluid .section-bottom-border {
   border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
@@ -275,14 +285,14 @@ nav .nav-right .form-group .search-icon img {
 #Auctions .container-fluid .part-one .top .dropdown-wrapper select {
   cursor: pointer;
 }
-#Auctions .container-fluid .part-one .top .dropdown-menu {
+#Auctions .container-fluid .part-one .top .mainDrop {
   border: none;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.16);
 }
-#Auctions .container-fluid .part-one .top .dropdown-menu a {
+#Auctions .container-fluid .part-one .top .mainDrop a {
   color: rgba(0, 0, 0, 0.63) !important;
 }
-#Auctions .container-fluid .part-one .top .dropdown-menu a:hover {
+#Auctions .container-fluid .part-one .top .mainDrop a:hover {
   color: black !important;
   background-color: transparent;
 }
@@ -426,6 +436,11 @@ nav .nav-right .form-group .search-icon img {
   background-color: #f3d00c;
 }
 
+@media (min-width: 768px) {
+  .auction-menu {
+    display: none !important;
+  }
+}
 @media (max-width: 768px) {
   .top .top-left {
     flex-direction: column;
@@ -433,6 +448,13 @@ nav .nav-right .form-group .search-icon img {
   .section-title .wrapper .auction-toggle {
     box-shadow: none;
     pointer-events: all !important;
+  }
+  .section-title .auction-menu {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.16);
+    border: none;
+  }
+  .section-title .auction-menu .dropdown-item:hover {
+    background-color: unset;
   }
 }
 @media (max-width: 1090px) {

@@ -1,6 +1,17 @@
 #Auctions {
 
     .container-fluid {
+        .clicked{
+            position: relative;
+            .fa-check{
+                position: absolute;
+                color: black;
+                right: 11px;
+                top: 8px;
+                visibility: visible!important;
+            }
+        }
+
         padding-top: 20px;
 
         .section-bottom-border {
@@ -29,17 +40,21 @@
                 font-size: 25px;
                 font-weight: bold;
                 position: relative;
+
                 i {
                     visibility: hidden;
                 }
-                .wrapper{
+
+                .wrapper {
                     width: fit-content;
                     display: flex;
                     align-items: center;
                     padding-right: 10px;
-                    .auction-toggle{
+
+                    .auction-toggle {
                         pointer-events: none;
-                        i{
+
+                        i {
                             visibility: visible;
                             font-size: 14px;
                             display: none;
@@ -64,7 +79,7 @@
                     }
                 }
 
-                .dropdown-menu {
+                .mainDrop {
                     border: none;
                     box-shadow: 0 8px 40px rgb(0 0 0 / 16%);
 
@@ -79,27 +94,31 @@
                 }
 
                 .top-left {
-                    .wrapper{
+                    .wrapper {
                         padding-top: 5px;
+
                         button {
-                                background-color: white;
-                                color: black;
-                                border: none;
-                                margin-bottom: 10px;
-                                font-size: 20px;
-                                outline: none;
-                                padding: 0;
-                                font-weight: 600;
-                                &::after {
-                                        content: none;
-                                    }
-                                
+                            background-color: white;
+                            color: black;
+                            border: none;
+                            margin-bottom: 10px;
+                            font-size: 20px;
+                            outline: none;
+                            padding: 0;
+                            font-weight: 600;
+
+                            &::after {
+                                content: none;
                             }
+
+                        }
                     }
+
                     ul {
                         padding: 0;
                         padding-top: 2px;
                         align-items: center;
+
                         li:first-child {
                             position: relative;
                         }
@@ -126,6 +145,7 @@
 
                 ul.auction-filter {
                     align-items: center;
+
                     li {
                         // padding-top: 10px;
                         list-style: none;
@@ -243,7 +263,11 @@
 }
 
 
-
+@media(min-width:768px) {
+    .auction-menu {
+        display: none !important;
+    }
+}
 
 @media (max-width:768px) {
     .top {
@@ -251,11 +275,25 @@
             flex-direction: column;
         }
     }
-    .section-title{
-        .wrapper{
-            .auction-toggle{
+
+    .section-title {
+        .wrapper {
+            .auction-toggle {
                 box-shadow: none;
-                pointer-events: all!important;
+                pointer-events: all !important;
+
+            }
+
+        }
+
+        .auction-menu {
+            box-shadow: 0 8px 40px rgb(0 0 0 / 16%);
+            border: none;
+
+            .dropdown-item {
+                &:hover {
+                    background-color: unset;
+                }
             }
         }
     }

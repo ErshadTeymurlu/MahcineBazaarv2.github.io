@@ -32,3 +32,12 @@ let countdown = () => {
     else if (textDay > 0) $(".countdown").text(`${textDay} Days`);
 }
 setInterval(countdown,1000);
+
+$(".auction-menu li").click(function(){
+    $(".auction-menu li").removeClass("clicked");
+    $(".auction-menu li i").addClass("d-none");
+    if (!$(this).hasClass("clicked")){
+        $(this).addClass("clicked");
+        $(".clicked i").removeClass("d-none");
+    }
+});
