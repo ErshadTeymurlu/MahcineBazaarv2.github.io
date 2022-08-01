@@ -1,5 +1,4 @@
 #Auctions {
-
     .container-fluid {
         .clicked {
             position: relative;
@@ -271,6 +270,11 @@
 }
 
 @media (max-width:768px) {
+    #Auctions{
+        .container-fluid{
+            padding-top: 5px;  
+        }
+    }
     .top {
         .top-left {
             flex-direction: column;

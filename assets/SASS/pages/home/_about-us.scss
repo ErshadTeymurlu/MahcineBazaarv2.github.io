@@ -1,27 +1,32 @@
-#about-us{
-    .container-fluid{
-        .information-wrapper{
+#about-us {
+    .container-fluid {
+        .information-wrapper {
             padding: 20px 0px;
             flex-direction: column;
-            span{
+
+            span {
                 color: rgba(0, 0, 0, 0.871);
                 font-weight: bold;
                 display: inline-block;
             }
-            input{
+
+            input {
                 margin-bottom: 15px;
                 width: 350px;
             }
-            button{
+
+            button {
 
                 background-color: white;
                 border: 1px solid rgba(0, 0, 0, 0.171);
                 padding: 5px 15px;
                 color: rgba(0, 0, 0, 0.795);
             }
-            span{
+
+            span {
                 position: relative;
-                &::after{
+
+                &::after {
                     content: "";
                     display: block;
                     position: absolute;
@@ -32,11 +37,13 @@
                     background-color: $primary-color;
                 }
             }
-            .form-group{
-                span{
+
+            .form-group {
+                span {
                     position: relative;
-                    &::after{
-                    content: "";
+
+                    &::after {
+                        content: "";
                         display: block;
                         position: absolute;
                         width: 100%;

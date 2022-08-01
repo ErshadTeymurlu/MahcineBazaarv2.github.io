@@ -14,7 +14,7 @@ $(".auction-filter li a").click(function () {
 
 //auction countdown
 let countdown = () => {
-    let countDate = new Date("Jul 31, 2022 12:27:00").getTime();
+    let countDate = new Date("Jul 5, 2022 21:27:00").getTime();
     let now = new Date().getTime();
     let gap = countDate - now;
 
@@ -29,7 +29,8 @@ let countdown = () => {
     let textSecond = Math.floor((gap % minute) / second);
 
     if (textDay == 0) $(".countdown").text(`${textHour}:${textMinute}:${textSecond}`);
-    else if (textDay > 0) $(".countdown").text(`${textDay} Days`);
+    else if (textDay == 1) $(".countdown").text(`${textDay} Day`);
+    else if (textDay >= 2) $(".countdown").text(`${textDay} Days`);
 }
 setInterval(countdown, 1000);
 
@@ -40,4 +41,9 @@ $(".auction-menu li").click(function () {
         $(this).addClass("clicked");
         $(".clicked i").removeClass("d-none");
     }
+});
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        margin: 6
+    });
 });
