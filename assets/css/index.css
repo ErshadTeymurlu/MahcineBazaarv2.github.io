@@ -669,6 +669,7 @@ footer .wrapper .support a {
   font-size: 17px;
   letter-spacing: 0.6px;
   font-weight: 500;
+  display: inline-block;
 }
 #hero .wrapper {
   flex-wrap: wrap;
@@ -740,7 +741,7 @@ footer .wrapper .support a {
   .left-top {
     flex-direction: column;
   }
-  .bid, .all-bids {
+  .comments, .all-bids {
     display: none;
   }
   .btn-bid {
