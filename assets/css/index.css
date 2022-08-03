@@ -253,7 +253,7 @@ nav .nav-right .form-group .search-icon img {
   height: 2px;
   margin-top: 5px;
   width: 100%;
-  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.63);
 }
 #Auctions .container-fluid .part-one div.section-title {
   font-size: 25px;
@@ -609,6 +609,9 @@ footer .wrapper .support a {
     margin-bottom: 0px;
   }
 }
+#hero {
+  padding-bottom: 40px;
+}
 #hero .wrapper-hero-top {
   padding: 12px 0px;
 }
@@ -735,6 +738,41 @@ footer .wrapper .support a {
 #hero .auction-info ul li.starting-price span.highest-bid {
   color: white;
   font-weight: bolder;
+}
+#hero #Comment input {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+#hero #Comment .comment-send {
+  background-color: #ffe55f;
+  font-weight: 600;
+  box-shadow: none;
+  border: none;
+}
+#hero #Comment .allComments ul {
+  padding: 0;
+}
+#hero #Comment .allComments ul li .person-bid {
+  background-color: green;
+  padding: 5px;
+  border-radius: 30px;
+  color: white;
+}
+#hero #Comment .allComments ul li div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 140px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#hero #Comment .allComments ul li div:last-child {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.16);
+  border-bottom-left-radius: 15px;
 }
 
 @media (max-width: 546px) {
