@@ -803,4 +803,43 @@ footer .wrapper .support a {
   .right ul li:first-child {
     border-top: none !important;
   }
+}
+.sell-car-hero .container-fluid {
+  display: flex;
+  justify-content: center;
+}
+.sell-car-hero .container-fluid .wrapper {
+  padding: 10px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  max-width: 620px;
+}
+.sell-car-hero .container-fluid .wrapper .small {
+  display: none;
+}
+.sell-car-hero .container-fluid .wrapper .top h2 {
+  font-weight: bolder;
+}
+.sell-car-hero .container-fluid .wrapper .top p.description {
+  color: rgba(0, 0, 0, 0.88);
+}
+.sell-car-hero .container-fluid .wrapper .submit-car {
+  padding: 10px 20px;
+  background-color: #ffe55f;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.6px;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .wrapper .row {
+    gap: 20px;
+  }
+  .wrapper .row .large {
+    display: none;
+  }
+  .wrapper .row .small {
+    display: block !important;
+  }
 }/*# sourceMappingURL=index.css.map */
