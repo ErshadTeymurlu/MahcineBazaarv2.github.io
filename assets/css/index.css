@@ -842,4 +842,77 @@ footer .wrapper .support a {
   .wrapper .row .small {
     display: block !important;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("/assets/images/67334.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px 5px;
+  margin: auto;
+  text-align: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: rgba(255, 255, 255, 0.938);
+  border-radius: 10px;
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-form .content {
+  padding: 20px 30px;
+}
+.login-form .title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.login-form .input-field {
+  padding-left: 22px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  border-radius: 3px;
+}
+.login-form .input-field input {
+  border: none;
+  box-shadow: none;
+}
+.login-form .input-field i {
+  position: absolute;
+  font-size: 20px;
+  left: 8px;
+  bottom: 3px;
+}
+.login-form .loginBtn {
+  margin: 30px 0px;
+}
+.login-form .loginBtn button {
+  padding: 7px 30px;
+  border: none;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  border-radius: 5px;
+  background-color: #ffe55f;
+}
+.login-form .sign-up {
+  font-size: 14px;
+}
+.login-form .sign-up a {
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
