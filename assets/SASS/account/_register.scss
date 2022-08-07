@@ -1,0 +1,15 @@
+.register {
+    .row {
+        input[placeholder="email"] {
+            padding-left: 15px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .register {
+        .row {
+            gap: 10px;
+        }
+    }
+}

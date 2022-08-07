@@ -849,7 +849,7 @@ footer .wrapper .support a {
   box-sizing: border-box;
 }
 
-#login {
+#account {
   font-family: sans-serif;
   height: 100vh;
   display: flex;
@@ -915,4 +915,14 @@ footer .wrapper .support a {
 }
 .login-form .sign-up a {
   text-decoration: none;
+}
+
+.register .row input[placeholder=email] {
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .register .row {
+    gap: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */
